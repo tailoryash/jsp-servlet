@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<servlet>
+		<servlet-name>add</servlet-name>
+		<servlet-class>com.yashtailor.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>square</servlet-name>
+		<servlet-class>com.yashtailor.SqureServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>square</servlet-name>
+		<url-pattern>/sq</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ServletExample</servlet-name>
+		<servlet-class>com.yashtailor.ServletConfigAndContextExample</servlet-class>
+<init-param>
+	<param-name>firstname</param-name>
+		<param-value>yash</param-value>
+</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletExample</servlet-name>
+		<url-pattern>/example</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>email</param-name>
+		<param-value>yash@gmail.com</param-value>
+	</context-param>
+</web-app>

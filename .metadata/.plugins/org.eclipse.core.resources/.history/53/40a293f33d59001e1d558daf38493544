@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+        <%@ taglib prefix="s" uri="http://java.sun.com/jsp/jstl/sql" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<c:out value = "Hello world"></c:out>
+<%-- <c:import url="https://www.google.com"></c:import> --%>
+${sDetails} <br/>
+<c:forEach items="${sDetails}" var = "student">
+	${student.name} <br/>
+</c:forEach>
+<s:setDataSource var = "db" 
+				driver = "com.mysql.jdbc.Driver" 
+				url = "jdbc:mysql://localhost:3306/promount-yash" 
+				user = "root" 
+				password = "root"/>
+				
+				<s:query var="rs" dataSource="${db}">
+					select * from customers
+				</s:query>
+
+</body>
+</html>

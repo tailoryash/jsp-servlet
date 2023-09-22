@@ -1,0 +1,7 @@
+package com.yashtailor;
+
+import HttpServlet;
+
+public class SqureServlet extends HttpServlet {
+
+}

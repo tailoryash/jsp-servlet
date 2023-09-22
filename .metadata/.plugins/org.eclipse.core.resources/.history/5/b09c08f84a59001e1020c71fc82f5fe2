@@ -1,0 +1,8 @@
+package com.yashtailor;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/Logout")
+public class Logout {
+
+}

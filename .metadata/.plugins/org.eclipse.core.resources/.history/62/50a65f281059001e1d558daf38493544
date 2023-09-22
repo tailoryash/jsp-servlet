@@ -1,0 +1,22 @@
+package com.yashtailor;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class SqureServlet extends HttpServlet {
+
+	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
+		PrintWriter out = res.getWriter();
+
+//		int square = (int) req.getAttribute("sum");
+		int square = req.getParameter("k");
+		square = square * square;
+		out.println("Hello to sq : " + square);
+		System.out.println("sq called");
+	}
+
+}

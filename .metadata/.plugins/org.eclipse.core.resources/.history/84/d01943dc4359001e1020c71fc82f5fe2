@@ -1,0 +1,9 @@
+package com.yashtailor;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/addDetails")
+public class AddDetailsServlet extends HttpServlet {
+		
+}
